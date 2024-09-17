@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: codegen12d-sep17-2-vllm-gitops-repository
+spec:
+  url: https://github.com/redhat-appstudio-mjf/codegen12d-sep17-2-vllm-gitops

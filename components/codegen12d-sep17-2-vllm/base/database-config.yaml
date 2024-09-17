@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: codegen12d-sep17-2-vllm-database-config
+data:
+  VECTORDB_HOST: "codegen12d-sep17-2-vllm-database"
+  VECTORDB_PORT: ""

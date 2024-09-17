@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: codegen12d-sep17-2-vllm-gitops
+  description: This is GitOps manifest for codegen12d-sep17-2-vllm   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-name: codegen12d-sep17-2-vllm
+    janus-idp.io/tekton: codegen12d-sep17-2-vllm 
+    backstage.io/kubernetes-id: codegen12d-sep17-2-vllm 
+    backstage.io/techdocs-ref: dir:. 
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:codegen12d-sep17-2-vllm

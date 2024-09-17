@@ -1,0 +1,10 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+commonLabels:         
+  rhtap/gitops: codegen12d-sep17-2-vllm 
+  janus-idp.io/tekton: codegen12d-sep17-2-vllm
+  backstage.io/kubernetes-id: codegen12d-sep17-2-vllm
+  backstage.io/kubernetes-namespace: codegen12d-sep17-2-vllm 
+  app.kubernetes.io/part-of: codegen12d-sep17-2-vllm
+resources: 
+- application-dev.yaml
